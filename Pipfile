@@ -6,16 +6,16 @@ name = "pypi"
 [packages]
 bs4 = "*"
 requests = "*"
-jupyterlab = "*"
 retry = "*"
 click = "*"
-pandas = "*"
 documentcloud = "*"
 rich = "*"
 html5lib = "*"
 
 [dev-packages]
+pandas = "*"
 pre-commit = "*"
+jupyterlab = "*"
 
 [requires]
 python_version = "3.9"
