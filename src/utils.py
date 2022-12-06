@@ -50,6 +50,7 @@ def upload_pdf(
 
     # Search to see if it's already up there
     project_id = os.getenv("DOCUMENTCLOUD_PROJECT_ID")
+    assert project_id
     query = f"+project:{project_id} AND data_uid:{pdf_name}"
     search = client.documents.search(query)
 
@@ -66,7 +67,7 @@ def upload_pdf(
         document = client.documents.upload(
             pdf_path,
             title=f"{pdf_name.replace('.pdf', '')}",
-            project="210827",
+            project=project_id.split("-")[-1],
             access="public",
             data={"uid": pdf_name},
         )
