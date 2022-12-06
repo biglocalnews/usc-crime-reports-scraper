@@ -11,7 +11,7 @@ A GitHub Action workflow for automating the collection of [crime and fire logs](
 Fork the repository and clone the repository. Move into the code directory. Install the dependencies.
 
 ```bash
-pipenv install --dev;
+pipenv install --dev
 ```
 
 Install the pre-commit hooks.
