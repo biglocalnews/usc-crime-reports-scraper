@@ -10,11 +10,11 @@ jupyterlab = "*"
 retry = "*"
 click = "*"
 pandas = "*"
-pdfplumber = "*"
 documentcloud = "*"
 rich = "*"
 
 [dev-packages]
+pre-commit = "*"
 
 [requires]
 python_version = "3.9"
