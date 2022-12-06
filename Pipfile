@@ -12,6 +12,7 @@ click = "*"
 pandas = "*"
 documentcloud = "*"
 rich = "*"
+html5lib = "*"
 
 [dev-packages]
 pre-commit = "*"
